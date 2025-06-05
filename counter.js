@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function updateStepper(stepNumber) {
     stepperValue.textContent = stepNumber;
-
+    
     stepperCircles.forEach((circle, index) => {
       if (index < stepNumber) {
         circle.classList.add('stepper_circle--active');
