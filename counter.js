@@ -111,6 +111,8 @@ document.addEventListener('DOMContentLoaded', function () {
   formStep3.addEventListener('submit', function (e) {
     e.preventDefault();
     alert('✅ Success');
+    // window.location.reload();
+    localStorage.clear();
 
     formStep3.style.display = 'none';
     formStep1.style.display = 'block';
