@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
       .map(cb => cb.value);
 
     if (selectedTopics.length === 0) {
-      alert('Vui lòng chọn ít nhất một chủ đề bạn quan tâm.');
+      alert('Please select at least one topic!');
       return;
     }
 
