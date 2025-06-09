@@ -118,8 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
     formStep1.style.display = 'block';
     updateStepper(1);
     
-    usernameInput.value = localStorage.getItem('username') || '';
-    emailInput.value = localStorage.getItem('email') || '';
+   
   });
 
   
