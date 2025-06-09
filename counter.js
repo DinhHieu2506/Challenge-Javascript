@@ -118,8 +118,15 @@ document.addEventListener('DOMContentLoaded', function () {
     formStep1.style.display = 'block';
     updateStepper(1);
     
-    usernameInput.value = localStorage.getItem('username') || '';
-    emailInput.value = localStorage.getItem('email') || '';
+    usernameInput.value =  '';
+    emailInput.value =  '';
+
+    checkboxes.forEach(cb => {
+    cb.checked = false;
+    const label = cb.closest('.step-2-form__label');
+    label.classList.remove('step-2-form__label--checker');
+  });
+
   });
 
   
